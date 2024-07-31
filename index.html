@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="tailwind.js"></script>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        
-        <title>real.toxic</title>
-        <meta content="real.toxic" property="og:title" />
-        <meta content="#ff75ff" data-react-helmet="true" name="theme-color" />
-        
-    </head>
-    <body>
-        <div class="bg-grey-background grid place-items-center h-screen">
-            <div class="items-center grid  grid-cols-3 grid-rows-3">
-                <div class="drop-shadow-pink text-center col-span-3 col-start-1 row-start-2 select-none animate-fade-in-center font-mono text-5xl text-awesome-pink">real<a class="text-indigo-500">.toxic</a></div>
-                
-                <a href="https://discord.gg/SJ3dJYAeun" class="hover:cursor-pointer animate-fade-in-down transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-200 text-right col-start-3 row-start-3 select-none font-mono text-xl text-awesome-pink">Discord</a>
-                <p onclick="window.open('https://www.tiktok.com/@realtoxicmw3?lang=en')" class="hover:cursor-pointer animate-fade-in-down transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-200 text-left col-start-1 row-start-3 select-none font-mono text-xl text-awesome-pink">TikTok</p>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealToxic Docs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Documentation</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('section1')">Getting Started ></a></li>
+                <li><a href="#" onclick="showContent('section2')">Virtualization ></a></li>
+                <li><a href="#" onclick="showContent('section3')">Hyper-V ></a></li>
+                <li><a href="#" onclick="showContent('section4')">DControler ></a></li>
+                <li><a href="#" onclick="showContent('section5')">3rd Party AntiVirus ></a></li>
+                <li><a href="#" onclick="showContent('section6')">How To Avoid Bans ></a></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="section1" class="content-section">
+                <h2>Getting Started</h2>
+                <p>To get the current up to date loaders make sure to join <a href="https://discord.gg/silentaim">Server</a>.</p>
+            </section>
+            <section id="section2" class="content-section">
+                <h2>Virtualization</h2>
+                <p>This page will help you to turn on virtualization in BIOS.</p>
+                <p>Firstly, let's check if you have Virtualization on already. You can do so by opening Task Manager, then opening the performance tab.</p>
+                <p>If your Virtualization says it's disabled, then lets head to your BIOS to turn it on. If it is enabled, then you can go ahead and skip to the next step.</p>
+                <h2>Virtualization for Intel Users</h2>
+                <p>Once in your BIOS settings, head over to the advanced tab and select CPU configuration.</p>
+                <p>From there, go to Intel Virtualization Technology, and enabled it. Save changes and exit.</p>
+                <p>Your BIOS settings may differ depending on your manufacturer.</p>
+                <h2>Virtualization for AMD Users</h2>
+                <p>Once in your BIOS settings, head over to the advanced tab and select CPU configuration.</p>
+                <p>From there, go to SVM Mode, and enabled it. Save changes and exit.</p>
+                <p>Your BIOS settings may differ depending on your manufacturer.</p>
+            </section>
+            <section id="section3" class="content-section">
+                <h2>Hyper-V</h2>
+                <p>This page will help you turn off Hyper-V in Windows.</p>
+                <p>In order to turn off Hyper-V in Windows, we are going to start by opening a Windows Powershell as Admin. This can be done by typing powershell into your windows search, and pressing "Run as administrator" beside it.</p>
+                <p>Now that we have Powershell open, copy and paste the following lines of code separately, then press enter:</p>
+                <pre>bcdedit /set hypervisorlaunchtype off<br>Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All</pre>
+                <p>Getting an error that says "Disable-WindowsOptionalFeature : Feature name Microsoft-Hyper-V-All is unknown." on the above is completely normal. Once this is done, restart your PC for the changes to take effect.</p>
+            </section>
+            <section id="section4" class="content-section">
+                <h2>Windows AntiVirus</h2>
+                <p>After you ran the install first you also need to run this to disable your antivirus <a href="https://www.sordum.org/downloads/?st-defender-control">Download Here.</a></p>
+                <p>Password: sordum</p>
+            </section>
+            <section id="section5" class="content-section">
+                <h2>3rd party Antivirus</h2>
+                <p>Press windows key, type "Add or remove program", and in that list of programs, delete any that are antivirus.</p>
+            </section>
+            <section id="section6" class="content-section">
+                <h2>Avoiding Bans</h2>
+                <h2>Unlocker</h2>
+                <p>The unlocker is not meant to be played games with your meant to go into the game unlock everything and change up your classes with wtv you want the stuff that sticks is (camos, blueprints, charms, stickers) nothing else will stay no matter what.</p>
+                <p>Do not try and save the guns you make as a blueprint it will not work and make things worse.</p>
+                <p>Yes you can go into the training thing to shoot your guns and stuff that don't matter.</p>
+                <p>The unlocker comes with no recoil in it this is why we say do NOT play any games while using the tool no recoil is a rage feature and WILL get you perm banned.</p>
+                <p>You can use the Unlocker on as many accs as you want it don't matter its locked to your pc not to your acc.</p>
+                <p>We always suggest to test the unlocker on a fresh acc before your main acc mainly cus you prob don't know what you are doing and most likely will get yourself banned if you don't listen to the steps correctly.</p>
+                <p>If you wanna avoid all bans set your classes up all that stuff and exit the game do not play the game at all.</p>
+                <p>After you have done your classes and want to play legit exit the game and restart your pc when you come back and login to your pc you are good and can play normally now.</p>
+                <p>To load the unlocker again just turn everything in your anti virus off and run the dcontroller again and turn off windows defender.</p>
+                <h2>Vip Chair</h2>
+                <p>There really isn't a way of avoiding bans using the chair you got to understand a chair is meant for raging if you really care about your acc only use alts do NOT use your main acc.</p>
+                <p>Best way to not be banned when using the chair is to not use rage features. (aimbot, no spread/no recoil) Walls are fine as long as your not blatant with it and staring at ppl through the walls.</p>
+                <p>If you want to use aimbot then put the smoothing to 30 - 60 that is considered legit/semi legit remember the lower the smoothing the more ban risk your taking. Anything over 40 smoothing is legit and will prob be fine.</p>
+                <p>Do not play extensive amounts of time suggested is 3 - 5 hours while using the chair legit/semi legit.</p>
+            </section>
+        </main>
+        <div id="particles-div" style="position: fixed; inset: 0; z-index: -1; pointer-events: none;"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://reallytoxic.com/assets/particles.js"></script>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
